@@ -1,0 +1,18 @@
+//mixins-domieszki to zbiór właściwości i wartości tworzący styl. Zapisujemy je tak samo jak KLASY czyli z "." na początku.
+
+//domieszka składajaca się CZCIONKI, COLORU CZCIONKI, MARGINSEU DOLNEGO.
+.headers {
+    font-family: 'Verdana', sans-serif;
+    color: aqua;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 26px;
+    .headers;
+}
+
+h2 {
+    font-size: 20px;
+    .headers;
+}
