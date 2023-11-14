@@ -1,0 +1,20 @@
+//zmienne LESS moga przechowywać wartości różnego typu.
+@color: #FA8258;//kolor
+@header-size: 30px;//rozmiar nagłówka
+@padding: 20px 30px 30px 25px;//odstępy
+@border: 1px solid @color;//obramowanie
+@text: "To jest tekst";//tekst
+
+h1 {
+	color: @color;
+	font-size: @header-size;
+}
+
+div {
+	background-color: @color;
+    padding: @padding;
+}
+//akapit z pseudoelementem :AFTER dodaje TEKST na końcu.
+p:after {
+    content: @text;
+}
