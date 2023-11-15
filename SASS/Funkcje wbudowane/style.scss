@@ -1,0 +1,25 @@
+$color-a: #F00;
+$color-b: #00F;
+
+body {
+	font-family: 'Arial', sans-serif;
+	padding-left: 50px;
+}
+
+.content {
+	width: 55%;
+	padding: 40px;
+    p {
+        color: mix($color-a,$color-b);//funkcja MIX łączy 2 wybrane kolory, istnieja też inne funkcje takie jak w LESS (darken/lighten).
+    }
+	
+}
+
+.red {
+    color: $color-a;
+}
+
+
+.blue {
+	color: $color-b;
+}
