@@ -1,0 +1,29 @@
+@mixin border {
+	border: 1px solid #888;
+}
+// Domieszka z parametrem $RADIUS i wartosci docelowej 10px.
+@mixin border-radius($radius: 10px) {
+    border-radius: $radius;
+}
+// Domieszka SHADOW o wartości $ARGS pozwala użyć wiecej niż jeden argument.
+@mixin shadow($args...) {
+    box-shadow: $args;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	padding-left: 50px;
+}
+
+h1 {
+	width: 35%;
+    @include border;
+    @include border-radius(7px);//możemy nadpisywać wartości domieszek.
+}
+
+.content {
+	width: 55%;
+	padding: 40px;
+	@include border;
+    @include shadow(5px 5px 2px #333, -5px -5px 2px #F00);// dzieki wartości @ARGS możemy używać wiekszej ilosci argumentów.
+}
