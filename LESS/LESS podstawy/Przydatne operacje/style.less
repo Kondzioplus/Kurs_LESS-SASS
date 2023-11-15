@@ -1,0 +1,20 @@
+@width: 100px;
+
+div {
+	height: 120px;
+	background-color: #F00;
+}
+
+.first {
+	width: @width;
+}
+// mnożenie elementów
+.second {
+	width: 2*@width;
+    background-color: aqua;
+}
+// dodawanie(łączenie kolorów) i dzielenie kolorów.
+.third {
+	width: 3*@width;
+    background-color: (#9c6262 + rgb(56, 124, 193))/2;
+}
