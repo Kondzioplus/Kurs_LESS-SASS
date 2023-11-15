@@ -1,0 +1,37 @@
+// domieszka zapisana w dwóch wariantach dla przycisku CIEMNEGO i JASNEGO
+
+.button(dark) {
+	padding: 12px 22px;
+	border: none;
+	background-color: #222;
+	color: #CCC;
+}
+
+.button(light) {
+	padding: 12px 22px;
+	border: none;
+	background-color: #CCC;
+	color: #222;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+//pierwszy przycisk
+button {
+	.button(dark);//ciemny
+}
+//drugi przycisk z klasą JEDEN
+.jeden {
+    .button(light)//jasny
+}
+//możemy tez uzyć zmiennej do zapisu JASNY/CIEMNY:
+@button-type:dark;
+
+.dwa {
+    .button(@button-type)//ciemny
+}
