@@ -1,0 +1,30 @@
+@mixin border {
+	border: 1px solid #888;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	padding-left: 50px;
+}
+// zagniezdzanie elementów
+.content {
+	width: 55%;
+	padding: 40px;
+	@include border;
+    ul {
+        list-style-type: none;//reset stylów przegladarki.
+        li {
+            margin-bottom: 7px;//dolny margines
+            a {
+                color: #444;
+                text-decoration: none;
+                &:hover {
+                    color: #888;//efekt zmiany koloru po najechaniu kursorem(pseudoklasy zaczynamy od "&".
+                }
+                &:after {
+                    content: ' >>';//efekt strzałek za elementem dzieki klasie :AFTER o własciwości CONTENT.
+                }
+            }
+        }
+    }
+}
