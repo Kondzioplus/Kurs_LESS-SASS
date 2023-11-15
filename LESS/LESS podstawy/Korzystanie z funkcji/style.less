@@ -1,0 +1,24 @@
+@bg-color: #0B3861;
+
+div {
+	margin-left: 50px;
+	width: 500px;
+	height: 100px;
+	background-color: @bg-color;
+}
+//zmniejszenie NASYCENIA koloru.
+.first {
+	background-color:desaturate(@bg-color,70%) ;
+}
+//rozjasnianie koloru za pomoca funkcji LIGHTEN (pierwszy parametr KOLOR, drugi to PROCENT rozjasnienia).
+.second {
+	background-color: lighten(@bg-color,10%);
+}
+//przyciemnienie koloru za pomocą funkcji DARKEN.
+.third {
+	background-color: darken(@bg-color,5%);
+}
+//zmiana KRYCIA koloru (zmniejszenie krycia o 30%)
+.fourth {
+	background-color: fade(@bg-color,30%);
+}
