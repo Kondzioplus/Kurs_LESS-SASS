@@ -1,0 +1,31 @@
+@color-dark: #0404B4;
+@color-light: #EFEFFB;
+//domieszka z parametrami
+.button {
+	padding: 8px 18px;
+	background-color: @color-dark;
+	color: @color-light;
+	border: none;
+}
+//domieszka rozszerzona o parametr BORDER-RADIUS. Rozszerzona za pomoca PSEUDOKLASY :EXTEND. 
+.button-rounded {
+    border-radius: 8px;//nowy parametr
+    &:extend(.button);//stara domieszka rozszerzona.
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+
+.b-first {
+	.button;//stara domieszka
+}
+
+.b-second {
+	.button-rounded;//nowa domieszka o takich samych wartosciach + nowy parametr
+}
+
