@@ -1,0 +1,27 @@
+// domieszka z parametrami (moge uzywac jej wielokrotnie i zmieniać jej wartości)
+.border(@radius;@style;@color) {
+    border-radius: @radius;
+    border-style: @style;
+    border-color: @color;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+//nagłówek z domieszką o wartościach RAMKA 1px STYL SOLID(jednolity) i KOLOR ramki.
+header {
+	.border(1px; solid; #256)
+}
+//sekcja z domieszką o wartościach RAMKA 2px STYL DASHED(kreskowany) i KOLOR ramki.
+section {
+	.border(2px; dashed; rgb(60, 102, 34))
+}
+//stopka z domieszką o wartościach RAMKA 5px STYL DOTTED(kropkowany) i KOLOR ramki.
+footer {
+    .border(5px; dotted; rgb(45, 34, 102))
+}
+
