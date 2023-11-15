@@ -1,0 +1,24 @@
+//domieszka z przypisanymi bazowymi wartosciami, wywoływana za pomoca @arguments(argumenty/wartości domieszki zapisane w nawiasie).
+.border(@width: 1px;@style: solid;@color: #CCC) {
+	border: @arguments;//nie ma potrzeby rozpisywać wszystkich WŁASCIWOŚCI, mozna spakowac wszystkie jako argumenty.
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+
+header {
+	.border(4px;dotted;#f00);
+}
+
+section {
+	.border(2px;dashed;#777);
+}
+
+footer {
+    .border(8px, solid, #1e0303)
+}
