@@ -1,0 +1,15 @@
+// Domieszki w SASS tworzymy za pomoca wyrażenia "@mixin + nazwa własna".
+
+@mixin fonts {
+    font-family: 'Arial', sans-serif;
+}
+// Zagnieżdżanie domieszek tworzymy za pomocą wyrażenia "@include + nazwa domieszki".
+@mixin headers {
+    font-weight: 400;
+    color: aqua;
+    @include fonts;
+}
+// Korzystanie z domieszek SASS jest mozliwe po wpisaniu wyrażenia "@include + nazwa domieszki".
+h1, h2 {
+    @include headers;
+}
