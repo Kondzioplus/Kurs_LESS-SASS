@@ -1,0 +1,12 @@
+//w SASS zmienne zapisujemy tak samo jak w LESS z róznica na poczatku, zamiast "@" wstawiamy znak dolara "$".
+$font-size: 22px;
+$padding: 20px 40px 30px 20px;
+
+h1 {
+	font-size: $font-size;
+}
+
+.content {
+	background-color: #c1d4c8;
+    padding: $padding;
+}
