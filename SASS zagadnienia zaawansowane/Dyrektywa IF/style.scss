@@ -1,0 +1,23 @@
+$color-variant: 'Dark';
+//Dyrektywa IF oraz ELSE IF czyli sprawdzanie jakie zastosować własciwości. 
+@mixin set-color-variant {
+    @if $color-variant == Dark {// Jeśli zmienna ma wartość równą DARK to zostana zastosowane takie właściwosci.
+        color: #FFF;
+        background: #000;
+    }
+    @else if $color-variant == Light {//// Jeśli zmienna ma wartość równą LIGHT to zostana zastosowane takie właściwosci.
+        color: #000;
+        background: #FFF;
+    }
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	padding: 0 50px;
+    @include set-color-variant;//wywołanie na całym BODY.
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+
