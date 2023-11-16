@@ -1,0 +1,28 @@
+$bg-color: #0B4C5F;
+//petla FOR tworząca 10kolorów. Petla która sprawdza od 1 do 10 pozycji i przypisuje im jaśniejszy o 1% kolor.
+@mixin create-colors {
+    @for $i from 1 through 10 {
+        .block-#{$i} {
+            background: lighten($bg-color, $i);
+        }
+    }
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	padding: 0 50px;
+    @include create-colors;//wywołanie
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+
+div {
+	width: 50%;
+	height: 50px;
+	background: $bg-color;
+}
+
+
+
