@@ -1,0 +1,29 @@
+$column-width: 80px;
+// funkcje w SASS definiujemy zaczynajac od wyrażenia "@FUNCTION+nazwa własna", w nawiasie podajemy wartość przez jaka bedziemy mnożyć nasza zmienną. Nastepnie za pomocą wyrażenia "@RETURN" definiujemy zwrot jaki otrzymamy po obliczeniach.
+@function make-column ($number) {
+    @return $number*$column-width;
+}
+    
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+
+div {
+	height: 300px;
+	float: left;
+}
+
+.main {
+	background-color: #555;
+    width: make-column(5);//wywołanie funkcji za pomocą Funkcji "make-column" z wartością 5.
+}
+
+.aside {
+	background-color: #777;
+    width: make-column(2);//wywołanie funkcji za pomocą Funkcji "make-column" z wartościa 2.
+}
+ 
