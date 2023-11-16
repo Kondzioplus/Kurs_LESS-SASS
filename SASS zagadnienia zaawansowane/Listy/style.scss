@@ -1,0 +1,15 @@
+// Lista z parametrami odzielona jest SPACJĄ, indeks na liscie w SASS zaczyna się od 1.
+$colors: rgb(18, 7, 7) rgb(24, 233, 24) rgb(9, 9, 184);
+
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+
+ p {
+    color: nth($colors, 3)//wywolanie parametrów z listy odbywa sie za pomocą wyrażenia "NTH" które przyjmuje dwie wartości: pierwsza to "nazwa listy", druga to "indeks na liscie".
+ }
+ 
