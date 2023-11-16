@@ -1,0 +1,30 @@
+$bg-color: #0B4C5F;
+$i: 10;
+//petla WHILE odlicza od 10 do 1 przeskakując co drugi wiersz.
+@mixin generate-stripes {
+    @while $i > 0 {
+        .block-#{$i} {
+            background: lighten($bg-color, 50%);
+        }
+        $i: $i - 2;//co drugi wiersz jest sprawdzany przez petle.
+    }
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	padding: 0 50px;
+    @include generate-stripes;//wywołanie.
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+
+div {
+	width: 50%;
+	height: 50px;
+	background: $bg-color;
+}
+
+
+
