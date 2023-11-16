@@ -20,7 +20,7 @@ h1, h2 {
 }
 
 .camera {
-    @extend %span-icon;//rozszerzenie domieszki o PLACEHOLDER (użycie własciwosci placeholdera)
+    @extend %span-icon;//rozszerzenie KLASY o PLACEHOLDER (użycie własciwosci placeholdera)
 	background: #086A87;
 }
 
