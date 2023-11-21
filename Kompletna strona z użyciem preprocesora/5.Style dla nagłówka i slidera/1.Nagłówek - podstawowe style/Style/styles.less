@@ -1,0 +1,121 @@
+//własciwości z frameworka SEMANTIC GS
+//Siatka kolumn
+
+@columns: 12;//liczba kolumn
+@column-width: 65;//szerokośc kolumn
+@gutter-width: 30;//odstepy miedzy kolumnami
+@total-width: 100%;//responsywnosc kolumn
+
+//układ kolumn dla sekcji Nasze Usługi
+.our-services .single-col {
+    .column(12);
+    @media @tablet {
+        .column(3);//podział na 4 kolumny(12/3=4)
+    }
+}
+
+//układ kolumn dla sekcji Nasze Zalety
+.advantages .single-col {
+    .column(12);
+    @media @tablet {
+        .column(4);//podział na 3 kolumny(12/4=3)
+    }
+}
+
+//układ kolumn dla sekcji Statystki
+.statistics .single-col {
+    .column(12);
+    @media @phone {
+        .column(6);//podział na 2 kolumny(12/6=2)
+    }
+    @media @tablet {
+        .column(3)//podział na 4 kolumny(12/3=4)
+    }
+}
+
+//układ kolumn dla sekcji O Nas/Nasz zespół
+.our-team .single-col {
+    .column(12);
+    @media @tablet {
+        .column(4);
+    }
+}
+
+//układ kolumn dla sekcji Stopka
+.footer-main .single-col {
+    .column(12);
+    @media @phone {
+        .column(6);
+    }
+    @media @tablet {
+        .column(3);
+    }
+}
+
+//Kontener
+.container {
+    max-width: 1200px;//max szerokość
+    margin: 0 auto;//marginesy góra/dół=0 i boki AUTO
+    clear: both;//czyszczenie elementów pływajacych
+    padding: 0 15px;//odstępy góra/dół=0 i boki 15px
+}
+
+//Inne elementy
+img {
+    max-width: 100%;
+    vertical-align: middle;//wyrównanie w pionie
+}
+
+a {
+    text-decoration: none;//brak podkreslenia
+}
+
+//model pudełkowy
+* {//dla wszystkich elementów na stronie
+    box-sizing: border-box;
+}
+
+//tytuły sekcji
+.section-title {
+    margin-bottom: 40px;
+    .center-text;
+}
+
+//Nagłówki
+h1, h2, h3 {
+    line-height: 1.1;
+}
+
+//Mixin dla przycisków
+.basic-button(@color;@background-color) {
+    color: @color;
+    background-color: @background-color;
+    text-decoration: none;
+    .inline-block;
+    font-size: @basic-font-size;
+    font-weight: 400;
+    line-height: @basic-line-height;
+    text-transform: uppercase;
+}
+
+/* Nagłówek */
+
+header {
+    z-index: 1000;//kolejnośc wyswietlania elementu
+    position: fixed;//przyczepiony nagłówek
+    top: 0;//do góry
+    left: 0;//do lewej
+    right: 0;//do prawej
+    background: @basic-background;
+    border-bottom: 1px solid @basic-border-color;
+    box-shadow: 0 0 1px @basic-border-color;
+    .navbar {
+        height: 63px;
+        .nav-logo {
+            .float-left;
+            .center-verticale;
+            z-index: 2;
+        }
+    }
+}
+
