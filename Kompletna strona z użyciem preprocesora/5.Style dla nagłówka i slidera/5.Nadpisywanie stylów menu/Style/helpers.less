@@ -22,8 +22,8 @@
 }
 
 .center-no-float {
-    float: none;//brak elementów pływajacych
-    .center-text//tekst wyśrodkowany
+    .float-none;//brak elementów pływajacych
+    .center-text;//tekst wyśrodkowany
 }
 
 .no-center-float {
@@ -47,7 +47,7 @@
 
 //Wyrównanie w pionie
 
-.center-verticale {
+.center-vertical {
     position: relative;//pozycja relatywna
     top: 50%;//odsuniecie od góry o 50%
     transform: translateY(-50%);//odsunięcie na osi Y o -50%(do góry)
@@ -79,13 +79,13 @@
 .section-border-top(@border-color: @basic-border-color) {
     border-top-width: 1px;//szerokosc górnej ramki
     border-top-style: solid;//linia jednolita
-    border-top-color:@border-color ;//kolor
+    border-top-color: @border-color ;//kolor
 }
 //elementy z ramka na dole
 .section-border-bottom(@border-color: @basic-border-color) {
     border-bottom-width: 1px;//szerokosc dolnej ramki
     border-bottom-style: solid;//linia jednolita
-    border-bottom-color:@border-color ;//kolor
+    border-bottom-color: @border-color ;//kolor
 }
 
 //Elementy pływajace
@@ -121,7 +121,7 @@
 
 //Podstawowe przejscie 0,2s
 .basic-transition {
-    transition: all 0,2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 //Zmienne przejscie
