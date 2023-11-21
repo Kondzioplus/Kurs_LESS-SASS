@@ -1,0 +1,84 @@
+//Wyrównanie, pozycjonowanie
+
+.center-text {
+    text-align: center;//tekst wyśrodkowany
+}
+
+.float-left {
+    float: left;//elementy po lewej stronie
+}
+
+.float-right {
+    float: right;//elementy po prawej stronie
+}
+
+.float-none {
+    float: none;//brak elementów pływajacych
+}
+
+.center-no-float {
+    float: none;//brak elementów pływajacych
+    .center-text//tekst wyśrodkowany
+}
+
+.no-center-float {
+    .float-left;//elementy po lewej stronie
+    text-align: initial;//reset stylów tekstu
+}
+
+//Widoczność
+
+.invisible {
+    display: none;//element niewidoczny
+}
+
+.inline-block {
+    display: inline-block;//element blokowo-liniowy
+}
+
+.block {
+    display: block;//element blokowy
+}
+
+//Wyrównanie w pionie
+
+.center-verticale {
+    position: relative;//pozycja relatywna
+    top: 50%;//odsuniecie od góry o 50%
+    transform: translateY(-50%);//odsunięcie na osi Y o -50%(do góry)
+}
+
+//Rozmiary
+
+.absolute-one-hundred-size {
+    position: absolute;//pozycja absolutna
+    top: 0;//przyklejone do górnej krawedzi
+    left: 0;//przyklejone do lewej krawedzi
+    width: 100%;//szerokość 100%
+    height: 100%;//wysokość 100%
+}
+//domieszka dla szerokosci i wysokosci.
+.size(@width,@height) {
+    width: @width;
+    height: @height;
+}
+
+//Listy
+
+.list-style-none {
+    list-style-type: none;//reset stylów listy
+}
+
+//Ramki
+//elementy z ramka na górze
+.section-border-top(@border-color: @basic-border-color) {
+    border-top-width: 1px;//szerokosc górnej ramki
+    border-top-style: solid;//linia jednolita
+    border-top-color:@border-color ;//kolor
+}
+//elementy z ramka na dole
+.section-border-bottom(@border-color: @basic-border-color) {
+    border-bottom-width: 1px;//szerokosc dolnej ramki
+    border-bottom-style: solid;//linia jednolita
+    border-bottom-color:@border-color ;//kolor
+}
