@@ -1,0 +1,145 @@
+//Media queries dla Telefonu, Tabletu, Komputera Stacjonarnego
+@phone: ~"only screen and (min-width:768px)";
+@tablet: ~"only screen and (min-width:992px)";
+@desktop: ~"only screen and (min-width:1200px)";
+
+//Wyrównanie, pozycjonowanie
+
+.center-text {
+    text-align: center;//tekst wyśrodkowany
+}
+
+.float-left {
+    float: left;//elementy po lewej stronie
+}
+
+.float-right {
+    float: right;//elementy po prawej stronie
+}
+
+.float-none {
+    float: none;//brak elementów pływajacych
+}
+
+.center-no-float {
+    float: none;//brak elementów pływajacych
+    .center-text//tekst wyśrodkowany
+}
+
+.no-center-float {
+    .float-left;//elementy po lewej stronie
+    text-align: initial;//reset stylów tekstu
+}
+
+//Widoczność
+
+.invisible {
+    display: none;//element niewidoczny
+}
+
+.inline-block {
+    display: inline-block;//element blokowo-liniowy
+}
+
+.block {
+    display: block;//element blokowy
+}
+
+//Wyrównanie w pionie
+
+.center-verticale {
+    position: relative;//pozycja relatywna
+    top: 50%;//odsuniecie od góry o 50%
+    transform: translateY(-50%);//odsunięcie na osi Y o -50%(do góry)
+}
+
+//Rozmiary
+
+.absolute-one-hundred-size {
+    position: absolute;//pozycja absolutna
+    top: 0;//przyklejone do górnej krawedzi
+    left: 0;//przyklejone do lewej krawedzi
+    width: 100%;//szerokość 100%
+    height: 100%;//wysokość 100%
+}
+//domieszka dla szerokosci i wysokosci.
+.size(@width,@height) {
+    width: @width;
+    height: @height;
+}
+
+//Listy
+
+.list-style-none {
+    list-style-type: none;//reset stylów listy
+}
+
+//Ramki
+//elementy z ramka na górze
+.section-border-top(@border-color: @basic-border-color) {
+    border-top-width: 1px;//szerokosc górnej ramki
+    border-top-style: solid;//linia jednolita
+    border-top-color:@border-color ;//kolor
+}
+//elementy z ramka na dole
+.section-border-bottom(@border-color: @basic-border-color) {
+    border-bottom-width: 1px;//szerokosc dolnej ramki
+    border-bottom-style: solid;//linia jednolita
+    border-bottom-color:@border-color ;//kolor
+}
+
+//Elementy pływajace
+
+.overflow-fix {
+    overflow: auto;//naprawa elementów pływajacych
+}
+//Reset elementów pływajacych
+.clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+//Ukrywanie
+.hide {
+    opacity: 0;//ukrycie
+}
+
+.show {
+    opacity: 1;//pokazanie
+}
+
+//Narożniki
+
+.border-radius-single(@radius) {
+    border-radius: @radius;//wszystkie
+    -moz-border-radius: @radius;//mozzilla
+    -webkit-border-radius: @radius;//chrome
+}
+
+//Podstawowe przejscie 0,2s
+.basic-transition {
+    transition: all 0,2s ease-in-out;
+}
+
+//Zmienne przejscie
+.variable-transition(@length) {
+    transition: all @length ease-in-out;
+}
+
+//Translate 3D
+.translate3d(@move-x;@move-y;@move-z) {
+    transform: translateX(@move-x);
+    transform: translateY(@move-y);
+    transform: translateZ(@move-z);
+}
+
+//Nakładka
+.dark-overlay {
+    content: "";
+    z-index: 0;
+    .absolute-one-hundred-size;
+    background: none repeat 0 0 rgba(30, 30, 30, 0.5);
+}
