@@ -1,0 +1,15 @@
+//własciwości z frameworka SEMANTIC GS
+//Siatka kolumn
+
+@columns: 12;//liczba kolumn
+@column-width: 65;//szerokośc kolumn
+@gutter-width: 30;//odstepy miedzy kolumnami
+@total-width: 100%;//responsywnosc kolumn
+
+//układ kolumn dla sekcji Nasze Usługi
+.our-services .single-col {
+    .column(12);
+    @media @tablet {
+        .column(3);
+    }
+}
