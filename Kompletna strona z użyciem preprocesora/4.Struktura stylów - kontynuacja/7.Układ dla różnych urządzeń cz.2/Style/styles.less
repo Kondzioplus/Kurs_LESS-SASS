@@ -1,0 +1,53 @@
+//własciwości z frameworka SEMANTIC GS
+//Siatka kolumn
+
+@columns: 12;//liczba kolumn
+@column-width: 65;//szerokośc kolumn
+@gutter-width: 30;//odstepy miedzy kolumnami
+@total-width: 100%;//responsywnosc kolumn
+
+//układ kolumn dla sekcji Nasze Usługi
+.our-services .single-col {
+    .column(12);
+    @media @tablet {
+        .column(3);//podział na 4 kolumny(12/3=4)
+    }
+}
+
+//układ kolumn dla sekcji Nasze Zalety
+.advantages .single-col {
+    .column(12);
+    @media @tablet {
+        .column(4);//podział na 3 kolumny(12/4=3)
+    }
+}
+
+//układ kolumn dla sekcji Statystki
+.statistics .single-col {
+    .column(12);
+    @media @phone {
+        .column(6);//podział na 2 kolumny(12/6=2)
+    }
+    @media @tablet {
+        .column(3)//podział na 4 kolumny(12/3=4)
+    }
+}
+
+//układ kolumn dla sekcji O Nas/Nasz zespół
+.our-team .single-col {
+    .column(12);
+    @media @tablet {
+        .column(4);
+    }
+}
+
+//układ kolumn dla sekcji Stopka
+.footer-main .single-col {
+    .column(12);
+    @media @phone {
+        .column(6);
+    }
+    @media @tablet {
+        .column(3);
+    }
+}
