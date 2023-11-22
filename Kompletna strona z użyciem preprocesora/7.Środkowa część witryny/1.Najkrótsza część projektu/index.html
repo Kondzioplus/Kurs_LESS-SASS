@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Projekt</title>
+    
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/69fd84091b.js" crossorigin="anonymous"></script>
+
+    <!-- Fonty Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Style LESS -->
+    <link rel="stylesheet" href="Style/main.less" type="text/less">
+
+    <!-- Style bxSlider -->
+    <link rel="stylesheet" href="Style/jquery.bxslider.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    
+    <!-- JS LESS -->
+    <script src="JS/less.min.js"></script>
+
+    <!-- Biblioteka jQuery -->
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <!-- Mobilne menu - plugin slicknav -->
+    <script src="JS/jquery.slicknav.min.js"></script>
+
+    <!-- bxSlider JS -->
+    <script src="JS/jquery.bxslider.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="owl-carousel/owl.carousel.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Główny kontener -->
+    <div id="main-container">
+
+        <!-- Nagłówek -->
+        <header>
+            <nav>
+                <div class="container">
+                    <div class="navbar">
+                        <div class="nav-logo">
+                            <a href=""><img src="images/logo.png" alt="logo"></a></div>
+                            <div class="main-menu-content">
+                                <ul id="main-menu">
+                                    <li><a href="" class="menu-link-active">Start</a></li>
+                                    <li><a href="">Opinie</a></li>
+                                    <li><a href="">Portfolio</a></li>
+                                    <li><a href="">Sklep</a></li>
+                                    <li><a href="">Współpraca</a></li>
+                                    <li><a href="">Kontakt</a></li>
+                                    <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- menu mobilne -->
+                            <div id="attach-mobile-menu">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Slider górny -->
+        <div class="top-slider">
+            <ul class="bxslider" id="main-slider">
+                <li>
+                    <div class="main-slide-1">
+                        <div class="container">
+                            <div class="main-slider-content">
+                                <h1>W pełni responsywny projekt</h1>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="">Zobacz</a>
+                                <img src="images/slider_1_phone.png" alt="telefon">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="main-slide-2">
+                        <div class="container">
+                            <div class="main-slider-content">
+                                <h1>Oparty na LESS</h1>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="">Zobacz</a>
+                                <img src="images/slider_2_tablet.png" alt="tablet">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- sekcja nasze usługi -->
+        <div class="our-services">
+            <div class="container">
+                <!-- pojedyncza kolumna -->
+                <div class="single-col">
+                    <!-- ikona -->
+                    <span>
+                        <i class="fa-solid fa-chart-line"></i>
+                    </span>
+                    <h3>Najlepsi</h3>
+                    <p>Aenean sed justo tincidunt, vulputate nisi si amet, rutrum ligula. Pellentesque dictum uam ornare. Sed elit le rut.</p>
+                </div>
+
+                <div class="single-col">
+                    <span>
+                        <i class="fa-solid fa-wifi"></i>
+                    </span>
+                    <h3>Zasięg</h3>
+                    <p>Aenean sed justo tincidunt, vulputate nisi si amet, rutrum ligula. Pellentesque dictum uam ornare. Sed elit le rut.</p>
+                </div> 
+
+                <div class="single-col">
+                    <span>
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <h3>Dobry kontakt</h3>
+                    <p>Aenean sed justo tincidunt, vulputate nisi si amet, rutrum ligula. Pellentesque dictum uam ornare. Sed elit le rut.</p>
+                </div> 
+
+                <div class="single-col">
+                    <span>
+                        <i class="fa-solid fa-cloud"></i>
+                    </span>
+                    <h3>Praca w chmurze</h3>
+                    <p>Aenean sed justo tincidunt, vulputate nisi si amet, rutrum ligula. Pellentesque dictum uam ornare. Sed elit le rut.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nasze portfolio -->
+        <div class="portfolio">
+            <!-- Tytuł -->
+            <div class="section-title">
+                <div class="container">
+                    <h2>Nasze portfolio</h2>
+                    <p>Vestibulum accumsan auctor diam id aliquam. Sed at eros vitae nulla dictum convallis sit amet vel nibh</p>
+                </div>
+            </div>
+            <!-- Slider -->
+            <div class="portfolio-slider">
+                <div class="container">
+                    <div id="portfolio-carousel" class="owl-carousel">
+                        <div class="portfolio-item">
+                            <img src="images/owl_slider/os1.jpg" alt="obrazek1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-inner">
+                                    <h3>Przykładowy projekt</h3>
+                                    <p>11 stycznia 2023</p>
+                                    <a href="" class="portfolio-link-left">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                    <a href="" class="portfolio-link-right">
+                                        <i class="fa-regular fa-file-image"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item">
+                            <img src="images/owl_slider/os2.jpg" alt="obrazek1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-inner">
+                                    <h3>Przykładowy projekt</h3>
+                                    <p>11 stycznia 2023</p>
+                                    <a href="" class="portfolio-link-left">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                    <a href="" class="portfolio-link-right">
+                                        <i class="fa-regular fa-file-image"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item">
+                            <img src="images/owl_slider/os3.jpg" alt="obrazek1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-inner">
+                                    <h3>Przykładowy projekt</h3>
+                                    <p>11 stycznia 2023</p>
+                                    <a href="" class="portfolio-link-left">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                    <a href="" class="portfolio-link-right">
+                                        <i class="fa-regular fa-file-image"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item">
+                            <img src="images/owl_slider/os4.jpg" alt="obrazek1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-inner">
+                                    <h3>Przykładowy projekt</h3>
+                                    <p>11 stycznia 2023</p>
+                                    <a href="portfolio-link-left">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                    <a href="portfolio-link-right">
+                                        <i class="fa-regular fa-file-image"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item">
+                            <img src="images/owl_slider/os5.jpg" alt="obrazek1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-inner">
+                                    <h3>Przykładowy projekt</h3>
+                                    <p>11 stycznia 2023</p>
+                                    <a href="portfolio-link-left">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                    <a href="portfolio-link-right">
+                                        <i class="fa-regular fa-file-image"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sekcja Content -->
+        <div class="content-offer">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nasze portfolio</h2>
+                    <p>Vestibulum accumsan auctor diam id aliquam. Sed at eros vitae nulla dictum convallis sit amet vel nibh</p>
+                </div>
+                <img src="images/desktop.png" alt="laptop">
+            </div>
+        </div>
+
+        <!-- Sekcja Video -->
+        <div class="section-video">
+            <div id="movie"></div>
+            <div class="video-line">
+                <h2>Nasz najnowszy projekt</h2>
+                <a href="#" class="button">Zobacz więcej</a>
+            </div>
+            <div class="player"></div>
+        </div>
+
+        <!-- Pasek poniżej video -->
+        <div class="section-video-text">
+            <div class="container">
+                <h2>Kliknij aby skontaktować się z nami
+                    <a href="#" class="button">Zobacz więcej</a>
+                </h2>
+            </div>
+        </div>
+
+        <!-- Sekcja Nasze Zalety -->
+        <div class="advantages">
+            <div class="section-title">
+                <div class="container">
+                    <h2>Dlaczego warto skorzystać z naszych usług</h2>
+                    <p>Vestibulum accumsan auctor diam id aliquam. Sed at eros vitae nulla dictum convallis sit amet vel nibh</p>
+                </div>
+            </div>
+            <!-- Właściwa treść -->
+            <div class="advantages-content">
+                <div class="container">
+                    <!-- zalety - jeden element -->
+                    <div class="single-col">
+                        <span><i class="fa-solid fa-person"></i></span>
+                        <div class="services-content">
+                            <h3>Doświadczony zespół</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas nisl.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="single-col">
+                        <span><i class="fa-solid fa-users-between-lines"></i></span>
+                        <div class="services-content">
+                            <h3>Najlepsze rozwiazania</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas nisl.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="single-col">
+                        <span><i class="fa-solid fa-microchip"></i></span>
+                        <div class="services-content">
+                            <h3>Nowoczesne technologie</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas nisl.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="single-col">
+                        <span><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                        <div class="services-content">
+                            <h3>Lepsze rozwiazania</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas nisl.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="single-col">
+                        <span><i class="fa-solid fa-briefcase"></i></span>
+                        <div class="services-content">
+                            <h3>5 lat na rynku</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas nisl.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="single-col">
+                        <span><i class="fa-solid fa-flask"></i></span>
+                        <div class="services-content">
+                            <h3>Doświadczony zespół</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas nisl.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sekcja statystyki -->
+        <div class="statistics">
+            <div class="container">
+                <div class="statistics-single-item single-col">
+                    <div class="statistics-content">
+                        <h3></h3>
+                        <p>zadowolonych klientów</p>
+                    </div>
+                </div>
+
+                <div class="statistics-single-item single-col">
+                    <div class="statistics-content">
+                        <h3></h3>
+                        <p>zrealizowanych projektów</p>
+                    </div>
+                </div>
+
+                <div class="statistics-single-item single-col">
+                    <div class="statistics-content">
+                        <h3></h3>
+                        <p>lat działalnosci</p>
+                    </div>
+                </div>
+
+                <div class="statistics-single-item single-col">
+                    <div class="statistics-content">
+                        <h3></h3>
+                        <p>innych ważnych rzeczy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sekcja Paralax -->
+        <div class="photo-banner">
+            <div class="photo-banner-innet">
+                <div class="container">
+                    <h2>Przykładowy baner parallax</h2>
+                    <a href="#" class="button">Zobacz</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nasz Zespół -->
+        <div class="our-team">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nasze portfolio</h2>
+                    <p>Vestibulum accumsan auctor diam id aliquam. Sed at eros vitae nulla dictum convallis sit amet vel nibh</p>
+                </div>
+                <div class="team-members">
+                    <!-- jedna osoba -->
+                    <div class="team-member single-col">
+                        <img src="images/team_1.jpg" alt="osoba">
+                        <div>
+                            <h3>Lorem Ipsum</h3>
+                            <span>Programista</span>
+                            <p>Vestibulum accumsan Vestibulum accumsan auctor diam Vestibullum ante ipsum primis ipsum primis in faucib aliquam. Sed at eros vitae null.</p>
+                            <ul class="members-social">
+                                <li><a href="" class="social-media"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="" class="social-media"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="" class="social-media"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="" class="social-media"><i class="fa-brands fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="team-member single-col">
+                        <img src="images/team_1.jpg" alt="osoba">
+                        <div>
+                            <h3>Lorem Ipsum</h3>
+                            <span>Programista</span>
+                            <p>Vestibulum accumsan Vestibulum accumsan auctor diam Vestibullum ante ipsum primis ipsum primis in faucib aliquam. Sed at eros vitae null.</p>
+                            <ul class="members-social">
+                                <li><a href="" class="social-media"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="" class="social-media"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="" class="social-media"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="" class="social-media"><i class="fa-brands fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="team-member single-col">
+                        <img src="images/team_1.jpg" alt="osoba">
+                        <div>
+                            <h3>Lorem Ipsum</h3>
+                            <span>Programista</span>
+                            <p>Vestibulum accumsan Vestibulum accumsan auctor diam Vestibullum ante ipsum primis ipsum primis in faucib aliquam. Sed at eros vitae null.</p>
+                            <ul class="members-social">
+                                <li><a href="" class="social-media"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="" class="social-media"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="" class="social-media"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="" class="social-media"><i class="fa-brands fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Nasze opinie - slider -->
+        <div class="opinios">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Dlaczego warto skorzystać z naszych usług</h2>
+                    <p>Vestibulum accumsan auctor diam id aliquam. Sed at eros vitae nulla dictum convallis sit amet vel nibh</p>
+                </div>
+                <div class="opinios-content">
+                    <ul class="bxslider" id="opinions-slider">
+                        <li>
+                            <p>Vestibulum ante ipsum primis in lum ante ipsum primis in faucibus orci orci lum ante luctus et ultrices posuere cubilia Curae; Donec alit urna scelerisque ac.</p>
+                            <h3>Konrad Kucharski</h3>
+                        </li>
+
+                        <li>
+                            <p>Vestibulum ante ipsum primis in lum ante ipsum primis in faucibus orci orci lum ante luctus et ultrices posuere cubilia Curae; Donec alit urna scelerisque ac.</p>
+                            <h3>Konrad Kucharski</h3>
+                        </li>
+
+                        <li>
+                            <p>Vestibulum ante ipsum primis in lum ante ipsum primis in faucibus orci orci lum ante luctus et ultrices posuere cubilia Curae; Donec alit urna scelerisque ac.</p>
+                            <h3>Konrad Kucharski</h3>
+                        </li>
+
+                        <li>
+                            <p>Vestibulum ante ipsum primis in lum ante ipsum primis in faucibus orci orci lum ante luctus et ultrices posuere cubilia Curae; Donec alit urna scelerisque ac.</p>
+                            <h3>Konrad Kucharski</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stopka -->
+        <footer>
+            <div class="footer-main">
+                <div class="container">
+                    <!-- Social -->
+                    <div class="single-col">
+                        <h3>O nas</h3>
+                        <p>In hac habitasse platea dictumst. Duis consequat augue dui, non cursus justo commodo sed.</p>
+                        <ul class="footer-social">
+                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-discord"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- Nasz blog -->
+                    <div class="single-col our-blog">
+                        <h3>Nasz blog</h3>
+                        <li>
+                            <h4>
+                                <a href="">Uis consequat augue dui nonm non.</a>
+                            </h4>
+                            <span class="post-date"> 13 maj 1988</span>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <a href="">Uis consequat augue dui nonm non.</a>
+                            </h4>
+                            <span class="post-date"> 13 maj 1988</span>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <a href="">Uis consequat augue dui nonm non.</a>
+                            </h4>
+                            <span class="post-date"> 13 maj 1988</span>
+                        </li>
+                    </div>
+
+                    <!-- Galeria -->
+                    <div class="single-col footer-gallery">
+                        <h3>Galeria</h3>
+                        <ul>
+                            <li><a href=""><img src="images/galeria/1.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/galeria/2.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/galeria/3.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/galeria/4.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/galeria/2.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/galeria/1.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Linki -->
+                    <div class="single-col more-links">
+                        <h3>Linki</h3>
+                        <ul>
+                            <li><a href="">Strefa kursów</a></li>
+                            <li><a href="">Google</a></li>
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Inne</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copuright -->
+            <div class="copyright">
+                <div class="container">
+                    <p>Copyright 2015 © <a href="">Strefa kursów</a></p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script>
+        $(document).ready(function(){
+            /* menu mobilne */
+            $('#main-menu').slicknav({
+                prependTo: '#attach-mobile-menu',
+                label: ''
+            });
+            /* glowny slider */
+            $('#main-slider').bxSlider({
+                mode: 'fade',
+                auto: true,
+                controls: true,
+                pager: false
+            });
+            $('#portfolio-carousel').owlCarousel({
+                autoPlay: 10000,
+                items: 3,
+                itemsDesktopSmall: [1199,2],
+                itemsTablet: [768,1]
+            });
+        });
+        </script>
+</body>
+</html>
